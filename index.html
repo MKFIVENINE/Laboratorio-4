@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Datos</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Laboratorio JavaScript</h1>
+    <div class="form-group">
+        <label for="primer-nombre">Primer Nombre:</label>
+        <br>
+        <input type="text" id="primer-nombre" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="segundo-nombre">Segundo Nombre:</label>
+        <br>
+        <input type="text" id="segundo-nombre" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="primer-apellido">Primer Apellido:</label>
+        <br>
+        <input type="text" id="primer-apellido" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="segundo-apellido">Segundo Apellido:</label>
+        <br>
+        <input type="text" id="segundo-apellido" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="dni">DNI:</label>
+        <br>
+        <input type="text" id="dni" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+        <br>
+        <input type="date" id="fecha-nacimiento">
+    </div>
+    <button onclick="procesarDatos()">Procesar</button>
+    <div class="resultado">
+        <p>Nombre Completo:</p>
+        <input type="text" id="nombre-completo" disabled>
+        <p>Último dígito del DNI:</p>
+        <input type="text" id="ultimo-digito-dni" disabled>
+        <p>Edad:</p>
+        <input type="text" id="edad" disabled>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
